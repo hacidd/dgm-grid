@@ -1,8 +1,14 @@
 @media (min-width: 992px) {
 
+
+	.section-title {
+		font-size: 4.8rem;
+	}
     h1.company-name {
         font-size: 6rem;
-
+&::before {
+	width: 4px;
+}
     }
 
 	.header {
