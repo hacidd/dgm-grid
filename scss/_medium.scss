@@ -51,4 +51,14 @@
 			}
 		}
 	}
+	.gallery {
+		grid-template-columns: repeat(4, 1fr);
+		&__item {
+
+			&:nth-child(odd){
+				display: block;
+			}
+		}
+	}
+	
 }
