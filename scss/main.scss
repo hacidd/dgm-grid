@@ -235,48 +235,48 @@ h1.company-name {
 	position: relative;
 	display: grid;
 	grid-template-areas:
-		"title title title"
-		"box box box"
-		"box box box";
-		padding: 6em 2em;
-		&__title {
-			grid-area: title;
+		'title title title'
+		'box box box'
+		'box box box';
+	padding: 6em 2em;
+	&__title {
+		grid-area: title;
+	}
+	&__boxes {
+		grid-area: box;
+	}
+	&__box-img {
+		width: 100%;
+		object-fit: cover;
+		filter: sepia();
+	}
+	&__box-title {
+		margin: 0.3em 0;
+		font-size: 2.6rem;
+		color: $gold;
+		font-weight: 200;
+		text-transform: uppercase;
+	}
+	&__box-text {
+		margin-bottom: 0.5em;
+	}
+	&__box-link {
+		display: block;
+		margin-bottom: 2em;
+		font-weight: bold;
+		color: $gold;
+		text-align: right;
+		text-decoration: none;
+		transition: color 0.3s;
+		&:hover {
+			color: $darkgold;
 		}
-		&__boxes {
-			grid-area: box;
-		}
-		&__box-img {
-			width: 100%;
-			object-fit: cover;
-			filter: sepia()
-		}
-		&__box-title {
-			margin: 0.3em 0;
-			font-size: 2.6rem;
-			color: $gold;
-			font-weight: 200;
-			text-transform: uppercase;
-		}
-		&__box-text {
-			margin-bottom: 0.5em;
-		}
-		&__box-link {
-			display: block;
-			margin-bottom: 2em;
-			font-weight: bold;
-			color: $gold;
-			text-align: right;
-			text-decoration: none;
-			transition: color .3s;
-			&:hover {
-				color: $darkgold;
-			}
-		}
-		&__bg-icon {
-			display: none;
-		}
+	}
+	&__bg-icon {
+		display: none;
+	}
 }
-// PLANS 
+// PLANS
 
 .plans {
 	padding: 6em 2em;
@@ -307,8 +307,45 @@ h1.company-name {
 	&__item-name {
 		margin-top: 0;
 		margin-bottom: 1.5em;
-		font-size: 2.0rem;
+		font-size: 2rem;
 		color: $gold;
+	}
+}
+
+// NEWLETTER
+
+.newsletter {
+	padding: 8em 2em;
+	background-color: $red;
+	text-align: center;
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+	&__form {
+		&-input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			border-left-color: $white;
+			border: 1px solid transparent;
+		}
+		&-btn {
+			padding: 1em;
+			border: 1px solid $gold;
+			background: none;
+			color: $gold;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color .3s, color .3s;
+
+			&:hover {
+				color: $red;
+				background-color: $gold;
+			}
+		}
 	}
 }
 @import './small';
